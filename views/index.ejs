@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scroll Me</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,600&family=Source+Code+Pro:wght@400;700;800&family=Ubuntu:wght@400;500;700&display=swap');
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: 'Source Code Pro', monospace;
+        }
+        .max-width{
+            padding-bottom: 16px;
+        }
+
+        body>section{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        body>section>div:nth-child(1){
+            background:#FF5D5D;
+            flex-basis: 10%;
+            position: sticky;
+            top:0;
+            font-size: 22px;
+            font-weight: 800;
+            color: #fff;
+            padding-top:15px;
+            padding-left:50px;
+            margin-bottom: -20px;
+            display: flex;
+            flex-direction: column;
+            align-items:flex-start ;
+
+        }
+        section:nth-child(1){
+            background: #FFE3A9;
+        }
+        body>section:nth-child(2)>div:nth-child(1){
+            background: #FF8C8C;
+        }
+        section:nth-child(2){
+            background: #FFC3C3;
+        }
+        body>section:nth-child(3)>div:nth-child(1){
+            background: #EC9B3B;
+        }
+        section:nth-child(3){
+            background: #B8F1B0;
+        }
+        body>section:nth-child(4)>div:nth-child(1){
+            background: #14C38E;
+        }
+        section:nth-child(4){
+            background: #F1F0C0;
+        }
+        body>section>div:nth-child(2){
+
+            font-size: 60px;
+            font-weight: bold;
+            flex-grow: 2;
+            /*flex-shrink: 0;*/
+            /*height: 100vh;*/
+            /*height: 100%;*/
+            align-self: center;
+            margin: 40vh auto 50vh auto;
+        }
+
+        @media all and (max-width: 425px) {
+            .max-width{
+                padding-bottom: 15px;
+                padding-top: 21px;
+            }
+            body>section>div:nth-child(1) {
+                background: black;
+                background: #FF5D5D;
+                flex-basis: 10%;
+                position: sticky;
+                top: 0;
+                font-size: 22px;
+                font-weight: 800;
+                color: #fff;
+                padding-top: 40px;
+                padding-left: 50px;
+                margin-bottom: -20px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+
+</head>
+<body>
+<section >
+    <div >
+        <div class="max-width">Card 01</div>
+
+    </div>
+    <div>
+        Hello
+    </div>
+</section>
+<section>
+    <div>
+        <div class="max-width">Card 02</div>
+    </div>
+    <div>
+        How
+    </div>
+</section>
+<section>
+    <div>
+        <div class="max-width">Card 03</div>
+    </div>
+    <div>
+        Are
+    </div>
+</section>
+<section>
+    <div>
+        <div class="max-width">Card 04</div>
+    </div>
+    <div>
+        You?
+    </div>
+</section>
+
+</body>
+</html>
